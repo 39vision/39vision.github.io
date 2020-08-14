@@ -192,8 +192,20 @@ footer:before{
     
 
 @media (min-width: 1200px) {/* 1200px以上*/
-    h3 {
-        font-size: 1.4rem;
+    h2{
+        margin-top: 50px;
+    }
+    #website, #time, #fee {
+        font-size: 2.6rem;
+    }
+    #message{
+        font-size: 1.6rem;
+    }
+    #howtojoin_button{
+        padding: 50px 0;
+    }
+    #attention_text{
+        font-size: 1.6rem;
     }
     footer {
         font-size: 1.2rem;
