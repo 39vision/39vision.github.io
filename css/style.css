@@ -5,17 +5,9 @@ body{
     font-size:1.6rem;/* 16px*/
     line-height: 2;
     }
-.uk-accordion-title{
-    font-size:1.6rem;
-}
-#title{
-    font-family: "M PLUS Rounded 1c";
-    margin-top: 40vh;
-    text-shadow:0 0 6px #000000;
-}
 #main_wrap{
-    color: white;
-    background: #222222;
+    color: #f5f5f5;
+    background: #111111;
     padding-top: 60px;
 }
 .content_wrap{
@@ -27,7 +19,7 @@ header{
     background-color:rgba(34,34,34,0.5);
     z-index: 1;
     padding:10px;
-    color:white;
+    color: #f5f5f5;
 }
 header img{
     float: left;
@@ -76,9 +68,11 @@ header button{
 #website, #time, #fee {
     font-size: 2rem;
     margin: 10px 0;
+    font-family: "FP-ヒラギノ明朝 ProN W6";
 }
 #date{
     font-size: 3rem;
+    font-family: "FP-ヒラギノ明朝 ProN W6";
 }
 #date span{
     font-size: 4rem;
@@ -86,6 +80,7 @@ header button{
 #message{
     font-size: 1.3rem;
     margin: 50px 0;
+    font-family: "FP-ヒラギノ角ゴ ProN W6";
 }
 
 /*見出し*/
@@ -94,7 +89,8 @@ h2{
     position: relative;
     display: inline-block;
     padding: 30px 55px;
-    color: white;
+    color: #f5f5f5;
+    font-family: "FP-ヒラギノ角ゴ ProN W6";
 }
 h2:before, h2:after {
     content: '';
@@ -103,7 +99,7 @@ h2:before, h2:after {
     display: inline-block;
     width: 45px;
     height: 1px;
-    background-color:white;
+    background-color:#f5f5f5;
 }
 h2:before {
     left: 0;
@@ -114,9 +110,10 @@ h2:after {
 
 /*参加方法*/
 #howtojoin .content_wrap{
-    border: solid 1px white;
+    border: solid 1px #f5f5f5;
     max-width: 960px;
     margin:auto;
+    font-family: "FP-ヒラギノ角ゴ ProN W6";
 }
 .steptitle{
     line-height: 24px;
@@ -143,6 +140,7 @@ h2:after {
     margin: 10px 0;
     max-width: 960px;
     margin:auto;
+    font-family: "FP-ヒラギノ角ゴ ProN W6";
 }
 
 /*STAFF*/
@@ -150,6 +148,7 @@ h2:after {
     height:70px;
     max-width: 960px;
     margin:auto;
+    font-family: "FP-ヒラギノ角ゴ ProN W6";
 }
 .stafficon img{
     height:70px;
@@ -187,9 +186,9 @@ footer:before{
 .sharetext,.contacttext{
     font-size: 1.6rem;
     margin-top:30px;
+    font-family: "FP-ヒラギノ角ゴ ProN W6";
 }
 
-    
 
 @media (min-width: 1200px) {/* 1200px以上*/
     h2{
