@@ -12004,7 +12004,7 @@
 
 
                 this.tooltip = append(this.container,
-                    ("<div class=\"" + (this.clsPos) + "\"> <div class=\"" + (this.clsPos) + "-inner\">" + (this.title) + "</div> </div>")
+                    ("<div class=\"" + (this.clsPos) + "\"> <div class=\"" + (this.clsPos) + "-inner\">" + (this.) + "</div> </div>")
                 );
 
                 on(this.tooltip, 'toggled', function () {

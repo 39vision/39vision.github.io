@@ -1,0 +1,135 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size:1.6rem;/* 16px*/
+    line-height: 2;
+    background-image: url(/howtojoinimg/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "FP-ヒラギノ角ゴ ProN W6";
+}
+#main_wrap{
+    max-width: 960px;
+    margin:auto;
+    padding:30px;
+    color: #f5f5f5;
+}
+
+
+header{
+    background-color:rgba(34,34,34,0.5);
+    z-index: 1;
+    padding:10px;
+    color: #f5f5f5;
+    height:40px;
+    
+}
+header img{
+    float: left;
+    height:40px;
+    margin-left: 10px;
+}
+header span {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+#discription{
+    margin:30px 0;
+}
+
+#setup{
+    margin:30px 0;
+}
+#setup ul{
+    margin-left:40px;
+}
+#setup li{
+    list-style-type: square;
+}
+.title{
+    font-size:2.2rem;
+}
+
+#steps_wrap{
+    margin-top:20px;
+}
+.step_bg{
+    background-color: rgba(17,17,17,0.5);
+    text-align: center;
+}
+.step_img{
+    margin:auto;
+}
+.step img{
+    padding:20px;
+    height:260px;
+}
+.starting_title{
+    padding-left:10px;
+    font-size:2rem;
+    background-color: #339999;
+}
+.starting_text{
+    padding:20px;
+    text-align: initial;
+}
+.starting_text span{
+    color: skyblue;
+}
+#tips{
+    background-color: rgba(17,17,17,0.5);
+    margin-top:20px;
+}
+#tips img{
+    padding:20px;
+}
+.tips_text_wrap{
+    text-align: initial;
+}
+.tips_text{
+    padding:20px;
+}
+
+@media (min-width: 1200px) {/* 1200px以上*/
+body{
+    font-size:2rem;/* 16px*/
+}
+header{
+    height:60px;
+}
+header img{
+    height:60px;
+}
+header span {
+    font-size: 3rem;
+    margin-left: 20px;
+}
+.title{
+    font-size:3rem;
+}
+#setup_content{
+    font-size: 2rem;
+}
+
+#setup_img{
+    width:400px;
+}
+
+.starting_text{
+    font-size:1.6rem;
+}
+.tips_text_wrap{
+    font-size:1.6rem;
+}
+
+
+/*
+.step{
+    width:calc( 100% / 3 - 40px);
+}
+*/
+
+}
