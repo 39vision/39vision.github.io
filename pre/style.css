@@ -14,16 +14,26 @@
 }
 
 body{
-    background-image: url(./img/bg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     color:#eeeeee;
     letter-spacing: 0.1em;
     font-family: fot-tsukuardgothic-std, sans-serif;
     font-weight: 700;
 }
+
+body::before {
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background-repeat:no-repeat;
+    background-position:50% 100%;
+    background-image: url(./img/bg.png);
+    background-size:cover;
+    }
 
 
 
