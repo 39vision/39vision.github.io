@@ -29,7 +29,7 @@ body{
 
 /*ハンバーガーボタン*/
 .btn {
-	position: fixed;
+	position: absolute;
 	top: 32px;
 	right: 16px;
 	z-index: 10;
@@ -387,6 +387,97 @@ footer{
 .is_show {
     transform: translate(0, 0);
     opacity: 1;
+}
+
+
+/*ACCESS*/
+.access_title h1{
+    font-family: 'Arca Majora 3', sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    position:absolute;
+    top: 34px;
+	left: 16px;
+	z-index: 10;
+}
+.access_guidance{
+    background-image: url(./img/access.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    height:100vh;
+}
+.background_outer{
+    padding-top: 38vh;
+}
+.invate_outer{
+    padding-top: 8vh;
+}
+.access_guidance_menu{
+    display: flex;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    justify-content: flex-end;
+}
+.access_button::before{
+    content: "";
+	width: 20%;
+	height: 100%;
+	background-color: #d6d5d5;
+    transform: translate(20%,0);
+}
+/*
+.guide_line_outer{
+    width:20%;
+}
+.guide_line{
+    display: block;
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background-color: #d6d5d5;
+    transform: translate(0,50%);
+}
+*/
+.access_guidance_button{
+    width:70%;
+    text-align: center;
+    font-size: 3vh;
+}
+.access_button{
+    display: block;
+    border: 5px solid #eeeeee;
+    padding:10px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.15);
+    font-family: 'Arca Majora 3', sans-serif;
+}
+
+.access_contents{
+    margin:20px;
+    background-color: rgba(46, 46, 46, 0.7);
+    line-height: 1.6em;
+    font-size: 4vw;
+}
+.access_contents h2{
+    padding: 40px 0;
+    font-size: 8vw;
+    font-family: source-han-sans-japanese, sans-serif;
+    text-align: center;
+}
+.access_contents section {
+    padding:20px;
+    text-align: left;
+}
+.access_title{
+    padding-bottom: 10px;
+    font-size: 6vw;
+    font-family: source-han-sans-japanese, sans-serif;
+}
+.access_content img{
+    margin: 10px 0;
+    width:100%;
 }
 
 

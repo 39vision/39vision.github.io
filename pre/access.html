@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>39VISION</title>
+    <title>39VISION|ACCESS</title>
     <meta name="description" content="ファンメイドオンラインライブ39VISONのウェブサイトです。">
     <link rel="icon" type="image/png" href="/img/39hp_favicon.png">
 
@@ -18,6 +18,16 @@
     <link rel="stylesheet" href="style.css">
 
     <!--Font-->
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'hdj6vcs',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>  
 
 </head>
 <body>
@@ -26,95 +36,117 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
     <header>
-        <div class="title">
-            <h1 class="title_rotation">39VISION</h1>
+        <div class="access_title">
+            <h1>39VISION</h1>
         </div>
         <div class="menu">
             <div class="menu_button">
-                <button class="burger-btn">
-                    <span class="bar bar_top"></span>
-                    <span class="bar bar_mid"></span>
-                    <span class="bar bar_bottom"></span>
+                <button class="btn js-btn">
+                    <span class="btn-line"></span>
                 </button>
             </div>
             <nav class="gnav">
                 <div class="gnav_inner">
-                    <ul>
-                        <li><a href="#"><span>TOP</span></a></li>
-                        <li><a href="#"><span>CONCEPT</span></a></li>
-                        <li><a href="#"><span>HOW TO JOIN</span></a></li>
-                        <li><a href="#"><span>ACTORS</span></a></li>
-                        <li><a href="#"><span>ATTENTION</span></a></li>
-                        <li><a href="#"><span>NEWS</span></a></li>
-                        <li><a href="#"><span>CONCEPT</span></a></li>
-                        <li><a href="#"><span>STAFF</span></a></li>
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="./"><span>TOP</span></a></li>
+                        <li class="nav_item"><a href="./#concept"><span>CONCEPT</span></a></li>
+                        <li class="nav_item"><a href="./#howtojoin"><span>HOW TO JOIN</span></a></li>
+                        <li class="nav_item"><a href="./#actors"><span>ACTORS</span></a></li>
+                        <li class="nav_item"><a href="./#attention"><span>ATTENTION</span></a></li>
+                        <li class="nav_item"><a href="./#news"><span>NEWS</span></a></li>
+                        <li class="nav_item"><a href="./#concept"><span>CONCEPT</span></a></li>
+                        <li class="nav_item"><a href="./#staff"><span>STAFF</span></a></li>
                     </ul>
-                    <div class="button"><a href="#"><span>ACCESS</span></a></div>
-                    <div class="button"><a href="#"><span>ステージの作り方</span></a></div>
+                    <div class="button"><a href="./access"><span>ACCESS</span></a></div>
+                    <div class="button"><a href="./stage"><span>ステージの作り方</span></a></div>
                 </div>
             </nav>
         </div>
     </header>
-    <div class="guidance">
-        <div class="guidance_menu">
-            <div class="guidance_button">
-                <div class="button"><a href="#"><span>BACKGROUND</span></a></div>
-                <div class="guidance_button_text">背景映像をニコニコ生放送からお届けします</div>
+    <div class="access_guidance">
+        <div class="background_outer">
+            <div class="access_guidance_menu">
+                <div class="guide_line_outer">
+                    <span class="guide_line"></span>
+                </div>
+                <div class="access_guidance_button">
+                    <div class="access_button"><a href="#"><span>BACKGROUND</span></a></div>
+                    <div class="guidance_button_text">背景映像をニコニコ生放送からお届けします</div>
+                </div>
             </div>
         </div>
-        <div class="guidance_menu">
-            <div class="guidance_button">
-                <div class="button"><a href="#"><span>INVITE MIKU</span></a></div>
-                <div class="guidance_button_text">全面映像用のwebアプリを起動します</div>
+        <div class="invate_outer">
+            <div class="access_guidance_menu">
+                <div class="guide_line_outer">
+                    <span class="guide_line"></span>
+                </div>
+                <div class="access_guidance_button">
+                    <div class="access_button"><a href="#"><span>INVITE MIKU</span></a></div>
+                    <div class="guidance_button_text">全面映像用のwebアプリを起動します</div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="contents">
-        <h3>本システムの使い方</h3>
-        <p>今回の39VISIONは皆さんにステージを作ってもらい</p>
+    <div class="access_contents">
+        <h2>本システムの使い方</h2>
+        <section class="abstract">
+            <p>今回の39VISIONは皆さんにステージを作ってもらい</p>
+        </section>
         <section class="background">
-            <div class="section_inner">
-                <h2 class="section_title">背景映像について</h2>
-                <div class="section_content">
+            <div class="access_inner">
+                <h3 class="access_title">背景映像について</h3>
+                <div class="access_content">
                     <p>「BACKGROUND」のリンク先から</p>
-                    <img>
+                    <img src="img/16-9.png">
                 </div>
             </div>
         </section>
         <section class="invitemiku">
-            <div class="section_inner">
-                <h3 class="section_title">前面映像について</h3>
-                <div class="section_content">
+            <div class="access_inner">
+                <h3 class="access_title">前面映像について</h3>
+                <div class="access_content">
                     <p>「INVITE MIKU」ボタンから</p>
-                    <img>
+                    <img src="img/16-9.png">
                 </div>
             </div>
         </section>
         <section class="webapp">
-            <div class="section_inner">
-                <h3 class="section_title">webアプリについて</h3>
-                <div class="section_content">
+            <div class="access_inner">
+                <h3 class="access_title">※Webアプリについて</h3>
+                <div class="access_content">
                     <p>こんなアプリなのでこうしてください。</p>
-                    <img>
+                    <img src="img/16-9.png">
                 </div>
             </div>
         </section>
     </div>
 
     <footer>
-        <div class="footer_logo">
-            <img src="img/logo_f.png">
+        <div class="footer_logo footer_content">
+            <h1 class="footer_title_text">39VISION</h1>
         </div>
         <div class="share footer_content">
             <div class="footer_title">共有</div>
             <a href="http://twitter.com/share?url=https://39vision.com&text=あなたの部屋に、感動を――。ボーカロイドファンメイドライブ『39VISION』8月29日開催！！&hashtags=39VISION"><img src="img/Twitter.png"></a>
             <a href="https://social-plugins.line.me/lineit/share?url=https://39vision.com"><img src="img/LINE.png"></a>
+            <a href="#"><img src="img/facebook.png"></a>
         </div>
         <div class="contact footer_content">
             <div class="footer_title">お問い合わせ</div>
             <a href="https://twitter.com/39Vision">https://twitter.com/39Vision</a>
         </div>
     </footer>
+
+<script>
+    //メニュー
+    $(function () {
+        $('.js-btn, .nav_item').on('click', function () {
+            $('.btn-line').toggleClass('open'); 
+            $('.gnav').toggleClass('fade'); 
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
 
 </body>
 </html>

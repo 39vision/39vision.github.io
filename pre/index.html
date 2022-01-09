@@ -55,8 +55,8 @@
                         <li class="nav_item"><a href="#concept"><span>CONCEPT</span></a></li>
                         <li class="nav_item"><a href="#staff"><span>STAFF</span></a></li>
                     </ul>
-                    <div class="button"><a href="#"><span>ACCESS</span></a></div>
-                    <div class="button"><a href="#"><span>ステージの作り方</span></a></div>
+                    <div class="button"><a href="./access.html"><span>ACCESS</span></a></div>
+                    <div class="button"><a href="./stage.html"><span>ステージの作り方</span></a></div>
                 </div>
             </nav>
         </div>
@@ -213,13 +213,10 @@
 <script>
     //メニュー
     $(function () {
-        $('.js-btn').on('click', function () {
+        $('.js-btn, .nav_item').on('click', function () {
             $('.btn-line').toggleClass('open'); 
             $('.gnav').toggleClass('fade'); 
-        })
-        $('.nav_item').on('click', function () {
-            $('.btn-line').toggleClass('open');
-            $('.gnav').toggleClass('fade');
+            $('body').toggleClass('noscroll');
         })
     });
     //スライドイン
