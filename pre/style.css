@@ -1,5 +1,18 @@
 /*スマホ基準*/
 
+@font-face {
+    font-family: 'Arca Majora 3';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Arca Majora 3'), url('https://fonts.cdnfonts.com/s/40277/ArcaMajora3-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Arca Majora 3';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Arca Majora 3'), url('https://fonts.cdnfonts.com/s/40277/ArcaMajora3-Heavy.woff') format('woff');
+}
+
 body{
     background-image: url(./img/bg.png);
     background-position: center;
