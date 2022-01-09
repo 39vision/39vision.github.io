@@ -1,0 +1,390 @@
+/*スマホ基準*/
+
+body{
+    background-image: url(/img/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#eeeeee;
+    letter-spacing: 0.1em;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-weight: 700;
+}
+
+
+
+/*ハンバーガーボタン*/
+.btn {
+	position: fixed;
+	top: 32px;
+	right: 16px;
+	z-index: 10;
+	width: 48px;
+	height: 48px;
+}
+/***** 真ん中のバーガー線 *****/
+.btn-line {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 4px;
+	background-color: #d6d5d5;
+	transition: .2s;
+}
+/***** 上下のバーガー線 *****/
+.btn-line::before , .btn-line::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #d6d5d5;
+	transition: .5s;
+}
+.btn-line::before {
+	transform: translateY(-16px);
+}
+.btn-line::after {
+	transform: translateY(16px);
+}
+/***** メニューオープン時 *****/
+.btn-line.open {
+	background-color: transparent;
+}
+.btn-line.open::before , .btn-line.open::after {
+	content: "";
+	/*background-color: #333;*/
+	transition: .2s;
+}
+.btn-line.open::before {
+	transform: rotate(45deg);
+}
+.btn-line.open::after {
+	transform: rotate(-45deg);
+}
+
+
+
+
+
+/*グローバルナビゲーション*/
+.gnav{      
+    visibility: hidden;  
+    opacity: 0;
+    width: 100vw;      
+    height: 100vh;      
+    position: fixed;      
+    top: 0;      
+    left: 0;
+    transition: all .5s;       
+    z-index: 2;     
+}
+.gnav.fade {
+    visibility: visible;
+    opacity: 1;
+}
+.gnav_inner{        
+    width: 100%;        
+    height: 100%;        
+    background-color:#222222;        
+    z-index: 2;
+    font-size: 1.4em;
+}     
+.nav_list{
+    margin: 0 auto;
+    padding:100px 0 10px 0;    
+    text-align: center;      
+}   
+.nav_item:first-child{
+    border-top: 1px solid #d6d5d5;
+}   
+.nav_item{        
+    height:7vh;
+    border-bottom: 1px solid #d6d5d5;
+}
+.nav_item a{
+    display: flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center; 
+}
+.noscroll{
+    overflow: hidden;
+}
+.gnav_inner .button{
+    width:80vw;
+    margin: 20px auto;
+}
+
+
+
+
+/* 横向きタイトル（39VISION） */
+.title{
+    height:70vh;
+    font-family: 'Arca Majora 3', sans-serif;
+}
+.title_rotation {
+    margin-left:6vw;
+    margin-top: 4vh;
+    position: absolute;
+    top:0px;
+    left:0px;
+    transform: rotate(90deg) translate(-8.3vh, 0);
+    transform-origin:left bottom;
+    display: flex;
+}
+.title_text {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 8.3vh; /*100vh/12文字で横幅いっぱい*/
+    font-weight: bold;
+}
+.datetime {
+    margin: 1.2vh 0;
+    font-size: 2.3vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.date {
+    width: 100%;
+}
+.time {
+    width: 100%;
+}
+.guidance{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
+    padding: 20px 0;
+}
+
+/* タイトル下ガイド */
+.guidance_menu{
+    display: flex;
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+.guidance_button{
+    width:100%;
+    text-align: center;
+    font-size: 3vh;
+}
+.button{
+    display: block;
+    border: 5px solid #eeeeee;
+    padding:10px;
+    text-align: center;
+}
+
+.guidance_button .button{
+    background-color: rgba(255,255,255,0.15);
+    font-family: 'Arca Majora 3', sans-serif;
+}
+.guidance_button .button span{
+    position: relative;
+    padding-left: 30px;
+}
+.guidance_button .button span::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #eeeeee;
+    border-right: 3px solid #eeeeee;
+    transform: rotate(45deg);
+    margin-top: -5px;
+}
+
+.guidance_button_text{
+    margin-top: 8px;
+    font-size: 0.5em;
+}
+
+/* メインコンテンツ */
+.contents{
+    background-color: rgba(0,0,0,0.8);
+}
+.section_title{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Arca Majora 3', sans-serif;
+}
+.section_title_text{
+    font-size: 5.8vh;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+}
+section{
+    overflow-x: hidden;
+}
+section:nth-child(2n+1) .section_title .section_title_text:first-letter{
+    color:#57c7fc;
+}
+section:nth-child(2n) .section_title .section_title_text:first-letter{
+    color:#ffa825;
+}
+
+.section_title_shadow{
+    float:right;
+    margin-right:20px;
+    font-size: 10vh;
+    color: transparent;
+    -webkit-text-stroke: 4px rgb(32, 32, 32);
+    white-space: nowrap;
+}
+
+.section_content{
+    margin:16px 20px 30px 20px;
+    padding: 20px;
+    font-size: 4vw;
+}
+
+/* HOWTOJOIN */
+.step{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.step_title{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    background-color: rgba(255,255,255,0.15);
+    padding:10px 5px;
+    font-size: 7vw;
+    width:12vw;
+    display: flex;
+    align-items: center;
+}
+.step_content{
+    margin:10px 0;
+    width:64vw;
+    font-size: 3.6vw;
+}
+.step_content img{
+    margin: 30px 0;
+    width:100%;
+}
+.step:nth-child(2){
+    flex-direction:row-reverse;
+}
+
+/* ACTORS */
+.section_content_actors{
+    margin:40px 0;
+}
+.actor{
+    width:100vw;
+    display:flex;
+}
+.actor:nth-child(2){
+    margin-top: -10%;
+}
+.actor:nth-child(3){
+    margin-top: -10%;
+}
+.actor:nth-child(2n+1){
+    flex-direction:row-reverse;
+}
+.actor_name{
+    min-width:50%;
+    font-size: 7vw;
+    display: flex;
+    align-items: center;
+}
+.actor:nth-child(2n+1) .actor_name{
+    padding-left: 20px;
+}
+.actor:nth-child(2n) .actor_name{
+    justify-content:flex-end;
+    padding-right: 20px;
+}
+
+.actor img{
+    min-width:60%;
+    Border-radius:50%;
+}
+
+/* STAFF */
+#staff .section_content{
+    overflow: hidden;
+}
+.role{
+    float: left;
+    width:50%;
+    text-align: center;
+    margin: 10px 0;
+}
+.role_name{
+    font-size: 3vw;
+}
+.staff_name{
+    margin: 10px 0;
+    font-size: 5vw;
+}
+
+/*footer*/
+footer{
+    padding: 50px 0;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+}
+.footer_content{
+    margin-bottom: 10px;
+}
+.footer_title_text{
+    font-family: 'Arca Majora 3', sans-serif;
+    font-size: 9vw;
+    font-weight: bold;
+}
+
+.footer_title{
+    font-size: 3.4vw;
+}
+.share a img{
+    margin:10px 4px;
+    width:6vw;
+}
+.contact a{
+    margin: 10px;
+    font-size: 3.4vw;
+    color: blue;
+    text-decoration:underline;
+    text-decoration-color:blue;
+}
+
+
+/*要素のスライドイン*/
+.fadeIn_right {
+    opacity: 0;
+    transform: translate(50%, 0);
+    transition: 1s;
+}
+.fadeIn_left {
+    opacity: 0;
+    transform: translate(-50%, 0);
+    transition: 1s;
+  }
+.is_show {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+
+
+
+
+
+/*PC*/
+@media screen and (min-width: 1025px)
+{
+
+
+
+}
